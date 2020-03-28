@@ -9,19 +9,20 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  display:flex;
+  font-family: "Poppins", sans-serif;
+  display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: hsl(0, 0%, 98%);
   width: 100%;
-  max-width:320px;
+  padding: 0 2.6rem;
   margin: 0 auto;
 }
 
 .header {
   margin-top: 12rem;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.45rem;
 }
 .header__title {
   font-weight: 200;
@@ -30,11 +31,57 @@ body {
   font-weight: 600;
 }
 
-.main{
-    /* max-width: 800px;
+.main {
+  /* max-width: 800px;
     width:100%;
     margin:0 auto;
      */
-     font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+.main__header {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 6rem;
+  max-width: 300px;
+  font-weight: 200;
+}
+.card {
+  padding: 1.5rem;
+  background-color: white;
+  height: 27rem;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  border-top: 4px solid black;
+  -webkit-box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.16);
+}
 
+.red {
+  border-color: hsl(0, 78%, 62%);
+}
+.cyan {
+  border-color: hsl(180, 62%, 55%);
+}
+.orange {
+  border-color: hsl(34, 97%, 64%);
+}
+.blue {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.card__header {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.card__content {
+  font-weight: 200;
+}
+.card__icon {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 1.6rem;
 }
