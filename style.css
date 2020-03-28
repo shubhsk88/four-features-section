@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -49,10 +49,13 @@ body {
 .card__container {
   display: grid;
   grid-template-rows: repeat(4, 27rem);
+  transition: 1s;
 
   gap: 4rem;
 }
 .card {
+  transition: 1s;
+
   padding: 1.5rem;
   background-color: white;
   height: 27rem;
@@ -92,21 +95,22 @@ body {
   bottom: 1.6rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .card__container {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 90%;
+    grid-template-rows: 27rem 27rem;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
+    gap: 4rem;
   }
-  .card__box {
-    grid-row: 1 / span 3;
-   
+  .card__container .card__box:nth-child(1),
+  .card__box:last-child {
+    grid-row: 1 / span 2;
     display: flex;
     align-items: center;
-    width: 50rem;
   }
-  .card__box:nth-child(2) {
-    flex-direction: column;
-    justify-content: space-around;
+  .card__box:last-child {
+    grid-column: 3 / span 1;
   }
 }
